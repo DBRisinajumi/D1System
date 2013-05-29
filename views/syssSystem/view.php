@@ -19,7 +19,11 @@ $this->breadcrumbs[] = $model->syss_id;
     'data'=>$model,
     'attributes'=>array(
             'syss_id',
-        'syss_ccmp_id',
+        array(
+            'name'=>'syss_ccmp_id',
+            'value'=>($model->syssCcmp !== null)?'<span class=label>CBelongsToRelation</span><br/>'.CHtml::link($model->syssCcmp->ccmp_name, array('ccmpCompany/view','ccmp_id'=>$model->syssCcmp->ccmp_id), array('class'=>'btn')):'n/a',
+            'type'=>'html',
+        ),
         'name',
 ),
         )); ?></p>

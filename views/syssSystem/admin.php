@@ -33,7 +33,11 @@ return false;
     ),
     'columns'=>array(
 		'syss_id',
-		'syss_ccmp_id',
+		array(
+					'name'=>'syss_ccmp_id',
+					'value'=>'CHtml::value($data,\'syssCcmp.ccmp_name\')',
+							'filter'=>CHtml::listData(CcmpCompany::model()->findAll(), 'ccmp_id', 'ccmp_name'),
+							),
 		'name',
         array(
             'class'=>'TbButtonColumn',

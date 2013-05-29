@@ -25,25 +25,33 @@
     
     <div class="row-fluid input-block-level-container">
         <div class="span12">
-            <?php echo $form->labelEx($model,'syss_ccmp_id'); ?>
-
-            <?php echo $form->textField($model,'syss_ccmp_id',array('size'=>10,'maxlength'=>10)); ?>
-            <?php echo $form->error($model,'syss_ccmp_id'); ?>
-            <?php if('help.syss_ccmp_id' != $help = Yii::t('D1System.crud', 'help.syss_ccmp_id')) { 
-                echo "<span class='help-block'>{$help}</span>";            
-} ?>
-        </div>
-    </div>
-
-
-    <div class="row-fluid input-block-level-container">
-        <div class="span12">
             <?php echo $form->labelEx($model,'name'); ?>
+
             <?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>200)); ?>
             <?php echo $form->error($model,'name'); ?>
             <?php if('help.name' != $help = Yii::t('D1System.crud', 'help.name')) { 
                 echo "<span class='help-block'>{$help}</span>";            
 } ?>
+        </div>
+    </div>
+
+    <div class="row-fluid input-block-level-container">
+        <div class="span12">
+        <label for="syssCcmp"><?php echo Yii::t('D1System.crud', 'SyssCcmp'); ?></label>
+                <?php
+                $this->widget(
+					'Relation',
+					array(
+							'model' => $model,
+							'relation' => 'syssCcmp',
+							'fields' => 'ccmp_name',
+							'allowEmpty' => true,
+							'style' => 'dropdownlist',
+							'htmlOptions' => array(
+								'checkAll' => 'all'),
+							)
+						)
+              ?>
         </div>
     </div>
 

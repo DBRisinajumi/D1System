@@ -10,6 +10,7 @@
  *
  * Relations of table "syss_system" available as properties of the model:
  * @property SyscComponents[] $syscComponents
+ * @property CcmpCompany $syssCcmp
  */
 abstract class BaseSyssSystem extends CActiveRecord{
 	public static function model($className=__CLASS__)
@@ -49,6 +50,7 @@ abstract class BaseSyssSystem extends CActiveRecord{
 	{
 		return array(
 			'syscComponents' => array(self::HAS_MANY, 'SyscComponents', 'sysc_syss_id'),
+			'syssCcmp' => array(self::BELONGS_TO, 'CcmpCompany', 'syss_ccmp_id'),
 		);
 	}
 
@@ -67,7 +69,7 @@ abstract class BaseSyssSystem extends CActiveRecord{
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('t.syss_id', $this->syss_id);
-		$criteria->compare('t.syss_ccmp_id', $this->syss_ccmp_id, true);
+		$criteria->compare('t.syss_ccmp_id', $this->syss_ccmp_id);
 		$criteria->compare('t.name', $this->name, true);
 
 		return new CActiveDataProvider(get_class($this), array(

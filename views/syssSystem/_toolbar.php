@@ -76,7 +76,7 @@
             <div class="btn-group">
             <?php $this->widget('bootstrap.widgets.TbButtonGroup', array(
         'buttons'=>array(
-                array('label'=>Yii::t('D1System.crud','Relations'), 'icon'=>'icon-search', 'items'=>array(array('label'=>'syscComponents - SyscComponents', 'url' =>array('syscComponents/admin')),
+                array('label'=>Yii::t('D1System.crud','Relations'), 'icon'=>'icon-search', 'items'=>array(array('label'=>'syscComponents - SyscComponents', 'url' =>array('syscComponents/admin')),array('label'=>'syssCcmp - CcmpCompany', 'url' =>array('ccmpCompany/admin')),
             )
           ),
         ),

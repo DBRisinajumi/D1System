@@ -12,7 +12,7 @@
 
                     <div class="row">
             <?php echo $form->label($model,'syss_ccmp_id'); ?>
-                            <?php echo $form->textField($model,'syss_ccmp_id',array('size'=>10,'maxlength'=>10)); ?>
+                            <?php echo $form->dropDownList($model,'syss_ccmp_id',CHtml::listData(CcmpCompany::model()->findAll(), 'ccmp_id', 'ccmp_name'),array('prompt'=>'all')); ?>
                     </div>
 
                     <div class="row">
