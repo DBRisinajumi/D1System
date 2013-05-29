@@ -57,9 +57,9 @@ abstract class BaseSyssSystem extends CActiveRecord{
 	public function attributeLabels()
 	{
 		return array(
-			'syss_id' => Yii::t('D1System.crud', 'Syss'),
-			'syss_ccmp_id' => Yii::t('D1System.crud', 'Syss Ccmp'),
-			'name' => Yii::t('D1System.crud', 'Name'),
+			'syss_id' => Yii::t('D1SystemModule.crud', 'Syss'),
+			'syss_ccmp_id' => Yii::t('D1SystemModule.crud', 'Syss Ccmp'),
+			'name' => Yii::t('D1SystemModule.crud', 'Name'),
 		);
 	}
 

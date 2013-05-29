@@ -1,6 +1,6 @@
 <div class="">
     <p class="alert">
-        <?php echo Yii::t('D1System.crud','Fields with <span class="required">*</span> are required.');?> 
+        <?php echo Yii::t('D1SystemModule.crud','Fields with <span class="required">*</span> are required.');?>
     </p>
 
 
@@ -29,7 +29,7 @@
 
             <?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>200)); ?>
             <?php echo $form->error($model,'name'); ?>
-            <?php if('help.name' != $help = Yii::t('D1System.crud', 'help.name')) { 
+            <?php if('help.name' != $help = Yii::t('D1SystemModule.crud', 'help.name')) {
                 echo "<span class='help-block'>{$help}</span>";            
 } ?>
         </div>
@@ -37,7 +37,7 @@
 
     <div class="row-fluid input-block-level-container">
         <div class="span12">
-        <label for="syssCcmp"><?php echo Yii::t('D1System.crud', 'SyssCcmp'); ?></label>
+        <label for="syssCcmp"><?php echo Yii::t('D1SystemModule.crud', 'SyssCcmp'); ?></label>
                 <?php
                 $this->widget(
 					'Relation',
@@ -67,11 +67,11 @@
     <div class="form-actions">
         
     <?php
-        echo CHtml::Button(Yii::t('D1System.crud', 'Cancel'), array(
+        echo CHtml::Button(Yii::t('D1SystemModule.crud', 'Cancel'), array(
 			'submit' => (isset($_GET['returnUrl']))?$_GET['returnUrl']:array('sysssystem/admin'),
 			'class' => 'btn'
 			));
-        echo ' '.CHtml::submitButton(Yii::t('D1System.crud', 'Save'), array(
+        echo ' '.CHtml::submitButton(Yii::t('D1SystemModule.crud', 'Save'), array(
             'class' => 'btn btn-primary'
             ));
     ?>

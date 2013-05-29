@@ -68,14 +68,14 @@ abstract class BaseSyscComponents extends CActiveRecord{
 	public function attributeLabels()
 	{
 		return array(
-			'sysc_id' => Yii::t('D1System.crud', 'Sysc'),
-			'sysc_syss_id' => Yii::t('D1System.crud', 'Sysc Syss'),
-			'sysc_sysc_id' => Yii::t('D1System.crud', 'Sysc Sysc'),
-			'sysc_level' => Yii::t('D1System.crud', 'Sysc Level'),
-			'sysc_is_parent' => Yii::t('D1System.crud', 'Sysc Is Parent'),
-			'sysc_name' => Yii::t('D1System.crud', 'Sysc Name'),
-			'sysc_sysm_id' => Yii::t('D1System.crud', 'Sysc Sysm'),
-			'sysc_deleted' => Yii::t('D1System.crud', 'Sysc Deleted'),
+			'sysc_id' => Yii::t('D1SystemModule.crud', 'Sysc'),
+			'sysc_syss_id' => Yii::t('D1SystemModule.crud', 'Sysc Syss'),
+			'sysc_sysc_id' => Yii::t('D1SystemModule.crud', 'Sysc Sysc'),
+			'sysc_level' => Yii::t('D1SystemModule.crud', 'Sysc Level'),
+			'sysc_is_parent' => Yii::t('D1SystemModule.crud', 'Sysc Is Parent'),
+			'sysc_name' => Yii::t('D1SystemModule.crud', 'Sysc Name'),
+			'sysc_sysm_id' => Yii::t('D1SystemModule.crud', 'Sysc Sysm'),
+			'sysc_deleted' => Yii::t('D1SystemModule.crud', 'Sysc Deleted'),
 		);
 	}
 

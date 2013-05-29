@@ -1,17 +1,17 @@
 <?php
-$this->breadcrumbs[Yii::t('D1System.crud','Sysm Sysmakers')] = array('admin');
+$this->breadcrumbs[Yii::t('D1SystemModule.crud','Sysm Sysmakers')] = array('admin');
 $this->breadcrumbs[] = $model->sysm_id;
 ?>
 <?php $this->widget("TbBreadcrumbs", array("links"=>$this->breadcrumbs)) ?>
 <h1>
-    <?php echo Yii::t('D1System.crud','Sysm Sysmaker')?> <small><?php echo Yii::t('D1System.crud','View')?> #<?php echo $model->sysm_id ?></small></h1>
+    <?php echo Yii::t('D1SystemModule.crud','Sysm Sysmaker')?> <small><?php echo Yii::t('D1SystemModule.crud','View')?> #<?php echo $model->sysm_id ?></small></h1>
 
 
 
 <?php $this->renderPartial("_toolbar", array("model"=>$model)); ?>
 
 <h2>
-    <?php echo Yii::t('D1System.crud','Data')?></h2>
+    <?php echo Yii::t('D1SystemModule.crud','Data')?></h2>
 
 <p>
     <?php
@@ -25,7 +25,7 @@ $this->breadcrumbs[] = $model->sysm_id;
 
 
 <h2>
-    <?php echo Yii::t('D1System.crud','Relations')?></h2>
+    <?php echo Yii::t('D1SystemModule.crud','Relations')?></h2>
 
 <div class='well'>
     <div class='row'>

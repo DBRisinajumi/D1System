@@ -21,7 +21,7 @@
                     </div>
 
         <div class="row buttons">
-        <?php echo CHtml::submitButton(Yii::t('D1System.crud', 'Search')); ?>
+        <?php echo CHtml::submitButton(Yii::t('D1SystemModule.crud', 'Search')); ?>
     </div>
 
     <?php $this->endWidget(); ?>

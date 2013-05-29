@@ -1,6 +1,6 @@
 <div class="">
     <p class="alert">
-        <?php echo Yii::t('D1System.crud','Fields with <span class="required">*</span> are required.');?> 
+        <?php echo Yii::t('D1SystemModule.crud','Fields with <span class="required">*</span> are required.');?>
     </p>
 
 
@@ -29,7 +29,7 @@
 
             <?php echo $form->textField($model,'sysc_level'); ?>
             <?php echo $form->error($model,'sysc_level'); ?>
-            <?php if('help.sysc_level' != $help = Yii::t('D1System.crud', 'help.sysc_level')) { 
+            <?php if('help.sysc_level' != $help = Yii::t('D1SystemModule.crud', 'help.sysc_level')) {
                 echo "<span class='help-block'>{$help}</span>";            
 } ?>
         </div>
@@ -41,7 +41,7 @@
             <?php echo $form->labelEx($model,'sysc_is_parent'); ?>
             <?php echo $form->textField($model,'sysc_is_parent'); ?>
             <?php echo $form->error($model,'sysc_is_parent'); ?>
-            <?php if('help.sysc_is_parent' != $help = Yii::t('D1System.crud', 'help.sysc_is_parent')) { 
+            <?php if('help.sysc_is_parent' != $help = Yii::t('D1SystemModule.crud', 'help.sysc_is_parent')) {
                 echo "<span class='help-block'>{$help}</span>";            
 } ?>
         </div>
@@ -53,7 +53,7 @@
             <?php echo $form->labelEx($model,'sysc_name'); ?>
             <?php echo $form->textField($model,'sysc_name',array('size'=>60,'maxlength'=>200)); ?>
             <?php echo $form->error($model,'sysc_name'); ?>
-            <?php if('help.sysc_name' != $help = Yii::t('D1System.crud', 'help.sysc_name')) { 
+            <?php if('help.sysc_name' != $help = Yii::t('D1SystemModule.crud', 'help.sysc_name')) {
                 echo "<span class='help-block'>{$help}</span>";            
 } ?>
         </div>
@@ -65,7 +65,7 @@
             <?php echo $form->labelEx($model,'sysc_deleted'); ?>
             <?php echo $form->textField($model,'sysc_deleted'); ?>
             <?php echo $form->error($model,'sysc_deleted'); ?>
-            <?php if('help.sysc_deleted' != $help = Yii::t('D1System.crud', 'help.sysc_deleted')) { 
+            <?php if('help.sysc_deleted' != $help = Yii::t('D1SystemModule.crud', 'help.sysc_deleted')) {
                 echo "<span class='help-block'>{$help}</span>";            
 } ?>
         </div>
@@ -73,7 +73,7 @@
 
     <div class="row-fluid input-block-level-container">
         <div class="span12">
-        <label for="syscSysm"><?php echo Yii::t('D1System.crud', 'SyscSysm'); ?></label>
+        <label for="syscSysm"><?php echo Yii::t('D1SystemModule.crud', 'SyscSysm'); ?></label>
                 <?php
                 $this->widget(
 					'Relation',
@@ -93,7 +93,7 @@
 
     <div class="row-fluid input-block-level-container">
         <div class="span12">
-        <label for="syscSyss"><?php echo Yii::t('D1System.crud', 'SyscSyss'); ?></label>
+        <label for="syscSyss"><?php echo Yii::t('D1SystemModule.crud', 'SyscSyss'); ?></label>
                 <?php
                 $this->widget(
 					'Relation',
@@ -113,7 +113,7 @@
 
     <div class="row-fluid input-block-level-container">
         <div class="span12">
-        <label for="syscSysc"><?php echo Yii::t('D1System.crud', 'SyscSysc'); ?></label>
+        <label for="syscSysc"><?php echo Yii::t('D1SystemModule.crud', 'SyscSysc'); ?></label>
                 <?php
                 $this->widget(
 					'Relation',
@@ -143,11 +143,11 @@
     <div class="form-actions">
         
     <?php
-        echo CHtml::Button(Yii::t('D1System.crud', 'Cancel'), array(
+        echo CHtml::Button(Yii::t('D1SystemModule.crud', 'Cancel'), array(
 			'submit' => (isset($_GET['returnUrl']))?$_GET['returnUrl']:array('sysccomponents/admin'),
 			'class' => 'btn'
 			));
-        echo ' '.CHtml::submitButton(Yii::t('D1System.crud', 'Save'), array(
+        echo ' '.CHtml::submitButton(Yii::t('D1SystemModule.crud', 'Save'), array(
             'class' => 'btn btn-primary'
             ));
     ?>

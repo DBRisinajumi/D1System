@@ -1,5 +1,5 @@
 <?php
-$this->breadcrumbs[] = Yii::t('D1System.crud','Syss Systems');
+$this->breadcrumbs[] = Yii::t('D1SystemModule.crud','Syss Systems');
 
 
 Yii::app()->clientScript->registerScript('search', "
@@ -18,7 +18,7 @@ return false;
 
 <?php $this->widget("TbBreadcrumbs", array("links"=>$this->breadcrumbs)) ?>
 <h1>
-    <?php echo Yii::t('D1System.crud', 'Syss Systems'); ?> <small><?php echo Yii::t('D1System.crud', 'Manage'); ?></small>
+    <?php echo Yii::t('D1SystemModule.crud', 'Syss Systems'); ?> <small><?php echo Yii::t('D1SystemModule.crud', 'Manage'); ?></small>
 </h1>
 
 <?php $this->renderPartial("_toolbar", array("model"=>$model)); ?>
